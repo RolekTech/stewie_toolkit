@@ -1,0 +1,19 @@
+{
+  "name": "stewie_toolkit",
+  "version": "0.1.0",
+  "description": "Service wrappers for common clients.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RolekTech/stewie_toolkit.git"
+  },
+  "author": "crolek",
+  "license": "NAFU",
+  "bugs": {
+    "url": "https://github.com/RolekTech/stewie_toolkit/issues"
+  },
+  "homepage": "https://github.com/RolekTech/stewie_toolkit#readme"
+}
