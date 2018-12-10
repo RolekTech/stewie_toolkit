@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/RolekTech/stewie_toolkit/issues"
   },
-  "homepage": "https://github.com/RolekTech/stewie_toolkit#readme"
+  "homepage": "https://github.com/RolekTech/stewie_toolkit#readme",
+  "dependencies": {
+    "aws-sdk": "^2.373.0",
+    "bluebird": "^3.5.3",
+    "chai": "^4.2.0",
+    "twilio": "^3.25.0",
+    "underscore": "^1.9.1"
+  }
 }
