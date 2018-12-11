@@ -1,3 +1,5 @@
+const Promise = require('bluebird');
+
 class FileService{
 
     constructor(startingDir){
@@ -6,7 +8,7 @@ class FileService{
 
     readFileToString(filePath, encodingType) {
 
-        return;
+        return Promise.resolve(false);
     }
 }
 

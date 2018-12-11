@@ -1,8 +1,10 @@
 const chai = require('chai');
 const expect = chai.expect;
 const should = chai.should();
-const FileService = require('../../../src/shared/services/file_service');
 const ErrorCases = require('../../utils/error_cases');
+const Promise = require('bluebird');
+
+const FileService = require('../../../src/shared/services/file_service');
 
 
 describe('Test_FileService', () => {
@@ -22,11 +24,10 @@ describe('Test_FileService', () => {
         //thing.should.equal('squiggs__');
     });
 
-    it('should return `undefined` when invalid file path is given', () => {
-        const results = fileService.readFileToString(Invalid_File.path, Invalid_File.encodingType);
+    it('should return `false` when invalid file path is given', async () => {
+        const results = await fileService.readFileToString(Invalid_File.path, Invalid_File.encodingType);
 
-        expect(results).to.equal(undefined);
-        expect(results).to.not.equal(null);
-    })
+        expect(results).to.equal(false);
+    });
 });
 
