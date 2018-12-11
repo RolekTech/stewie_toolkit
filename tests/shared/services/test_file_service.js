@@ -50,6 +50,15 @@ describe('Test_FileService', () => {
                 content: validFile.content
             });
         });
+
+        it('should default to `utf-8` if no value is provided', async () => {
+            const results = await fileService.readFileToString(validFile.path);
+
+            expect(results).deep.equals({
+                content: validFile.content
+            })
+
+        });
     });
 
 });

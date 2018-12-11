@@ -8,11 +8,13 @@ class ConfigService {
         this.configFilePath = configFilePath;
 
         this.configContent = {};
-
+        this.encodingType = 'utf-8';
     }
 
     async loadConfig() {
-        return Promise.resolve(false);
+        const results = await this.fileService.readFileToString(this.configFilePath, this.encodingType);
+
+        return Promise.resolve(results);
     }
 }
 
