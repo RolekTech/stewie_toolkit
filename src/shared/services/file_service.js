@@ -1,6 +1,6 @@
 const Promise = require('bluebird');
 
-class FileService{
+class FileService {
 
     constructor(fs){
         this.fs = fs;
