@@ -2,13 +2,27 @@ const Promise = require('bluebird');
 
 class FileService{
 
-    constructor(startingDir){
-
+    constructor(fs){
+        this.fs = fs;
     }
 
-    readFileToString(filePath, encodingType) {
+    async readFileToString(filePath, encodingType) {
+        let content;
 
-        return Promise.resolve(false);
+        if(filePath == '') {
+            return Promise.resolve(false);
+        }
+
+        try {
+            content = this.fs.readFileSync(filePath, {encoding: encodingType});
+            return Promise.resolve({
+                content: content,
+            });
+        } catch (err) {
+            return Promise.resolve(false);
+        }
+
+
     }
 }
 
