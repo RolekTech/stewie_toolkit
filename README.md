@@ -21,3 +21,22 @@ Stewie Butthole is my cat. He's my favorite pair programmer, so it just seems ri
 Plus, gives him some more lap time. ;)
 
 "Squigg" or Lil Squiggle is his also, Evil brother. lol. 
+
+
+# Setup
+Install node via something. `Node v8.10.0` is what this is currently built in.
+`NPM v5.6.0` is the current NPM version being used.
+
+This has not been run on a Windows machine yet.
+
+```$bash
+npm install
+
+```
+
+
+
+## Running the tests
+```$bash
+// TBD
+```
